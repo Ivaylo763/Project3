@@ -21,8 +21,8 @@ if "sports" not in st.session_state:
 
 st.subheader("Избери любими неща")
 
-color = st.selectbox("Любим цвят:", list(st.session_state.colors.kers()))
-sport = st.selectbox("Любим спорт:", list(st.session_state.sports.kers()))
+color = st.selectbox("Любим цвят:", list(st.session_state.colors.keys()))
+sport = st.selectbox("Любим спорт:", list(st.session_state.sports.keys()))
 
 if st.button("Запази избора"):
   st.sesion_state.colors[color] +=1
