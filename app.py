@@ -35,7 +35,7 @@ st.subheader("Резултати")
 
 st.write("Любими цветове")
 colors_df = pd.DataFrame.from_dict(
-  st.session_state.colors, orient = "inedx", columns = ["Брой"]
+  st.session_state.colors, orient = "index", columns = ["Брой"]
 )
 st.bar_chart(sports_df)
 
